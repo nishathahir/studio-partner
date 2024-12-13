@@ -31,7 +31,7 @@ export default function Home() {
                         {/* 1 */}
 
             <div className="dot" 
-              style={{bottom: '73%', left: '40%'}}
+              style={{bottom: '73%', left: '41%'}}
               onMouseEnter={() => setShowTooltip1(true)}
               onMouseLeave={() => setShowTooltip1(false)}
             >
@@ -44,7 +44,7 @@ export default function Home() {
 
             {/* 2 */}
             <div className="dot" 
-              style={{bottom: '57%', left: '42.5%'}}
+              style={{bottom: '57%', left: '41.5%'}}
               onMouseEnter={() => setShowTooltip2(true)}
               onMouseLeave={() => setShowTooltip2(false)}
             >
@@ -56,7 +56,7 @@ export default function Home() {
             </div>
             {/* 3 */}
             <div className="dot" 
-              style={{bottom: '62%', left: '44.5%'}}
+              style={{bottom: '62%', left: '41.5%'}}
               onMouseEnter={() => setShowTooltip3(true)}
               onMouseLeave={() => setShowTooltip3(false)}
             >
@@ -69,7 +69,7 @@ export default function Home() {
             {/* 4 */}
             <div 
               className="dot" 
-              style={{bottom: '43%', left: '46%'}}
+              style={{bottom: '43%', left: '47%'}}
               onMouseEnter={() => setShowTooltip(true)}
               onMouseLeave={() => setShowTooltip(false)}
             >
@@ -82,7 +82,7 @@ export default function Home() {
                     {/* 5 */}
 
             <div className="dot" 
-              style={{bottom: '20%', left: '47.5%'}}
+              style={{bottom: '20%', left: '48.5%'}}
               onMouseEnter={() => setShowTooltip5(true)}
               onMouseLeave={() => setShowTooltip5(false)}
             >
@@ -94,7 +94,7 @@ export default function Home() {
             </div>
                                 {/* 6 */}
             <div className="dot" 
-              style={{bottom: '43%', left: '50%'}}
+              style={{bottom: '43%', left: '51%'}}
               onMouseEnter={() => setShowTooltip6(true)}
               onMouseLeave={() => setShowTooltip6(false)}
             >
@@ -107,7 +107,7 @@ export default function Home() {
             {/* 7 */}
 
              <div className="dot" 
-              style={{bottom: '74%', left: '51%'}}
+              style={{bottom: '74%', left: '52%'}}
               onMouseEnter={() => setShowTooltip7(true)}
               onMouseLeave={() => setShowTooltip7(false)}
             >
@@ -120,7 +120,7 @@ export default function Home() {
 
             {/* 8 */}
             <div className="dot" 
-              style={{bottom: '64%', left: '55%'}}
+              style={{bottom: '64%', left: '56%'}}
               onMouseEnter={() => setShowTooltip8(true)}
               onMouseLeave={() => setShowTooltip8(false)}
             >
@@ -132,7 +132,7 @@ export default function Home() {
             </div>
                                                 {/* 9 */}
             <div className="dot" 
-              style={{bottom: '84%', left: '51%'}}
+              style={{bottom: '84%', left: '52%'}}
               onMouseEnter={() => setShowTooltip9(true)}
               onMouseLeave={() => setShowTooltip9(false)}
             >
@@ -145,7 +145,7 @@ export default function Home() {
 
                                     {/* 10 */}
             <div className="dot" 
-              style={{bottom: '70%', left: '57.5%'}}
+              style={{bottom: '70%', left: '58.5%'}}
               onMouseEnter={() => setShowTooltip10(true)}
               onMouseLeave={() => setShowTooltip10(false)}
             >
@@ -157,7 +157,7 @@ export default function Home() {
             </div>
                                     {/* 11 */}
             <div className="dot" 
-              style={{bottom: '93%', left: '59%'}}
+              style={{bottom: '93%', left: '60%'}}
               onMouseEnter={() => setShowTooltip11(true)}
               onMouseLeave={() => setShowTooltip11(false)}
             >
