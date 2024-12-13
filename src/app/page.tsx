@@ -1,101 +1,198 @@
-import Image from "next/image";
+"use client";
+import { Card, CardBody } from "@nextui-org/react";
+import './customStyles.css';
+import { useState } from 'react';
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const cardContents = [
+    "Our Team",
+    "Our Works",
+    "Client Testimonials"
+  ];
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  const [showTooltip, setShowTooltip] = useState(false);
+  const [showTooltip1, setShowTooltip1] = useState(false);
+  const [showTooltip2, setShowTooltip2] = useState(false);
+  const [showTooltip3, setShowTooltip3] = useState(false);
+  const [showTooltip5, setShowTooltip5] = useState(false);
+  const [showTooltip6, setShowTooltip6] = useState(false);
+  const [showTooltip7, setShowTooltip7] = useState(false);
+  const [showTooltip8, setShowTooltip8] = useState(false);
+  const [showTooltip9, setShowTooltip9] = useState(false);
+  const [showTooltip10, setShowTooltip10] = useState(false);
+  const [showTooltip11, setShowTooltip11] = useState(false);
+
+  return (
+    <div className="container">
+      <div className="row" style={{margin:"10rem 0" }}>
+        <div className="col-md-12" >
+          <div className="video-wrapper" style={{position: 'relative', display: "flex", justifyContent: "center", alignItems: "center"}}>
+            
+                        {/* 1 */}
+
+            <div className="dot" 
+              style={{bottom: '73%', left: '40%'}}
+              onMouseEnter={() => setShowTooltip1(true)}
+              onMouseLeave={() => setShowTooltip1(false)}
+            >
+              {showTooltip1 && (
+                <div className="tooltip visible">
+                  <span>Who we are</span>
+                </div>
+              )}
+            </div>
+
+            {/* 2 */}
+            <div className="dot" 
+              style={{bottom: '57%', left: '42.5%'}}
+              onMouseEnter={() => setShowTooltip2(true)}
+              onMouseLeave={() => setShowTooltip2(false)}
+            >
+              {showTooltip2 && (
+                <div className="tooltip visible">
+                  <span>What we do</span>
+                </div>
+              )}
+            </div>
+            {/* 3 */}
+            <div className="dot" 
+              style={{bottom: '62%', left: '44.5%'}}
+              onMouseEnter={() => setShowTooltip3(true)}
+              onMouseLeave={() => setShowTooltip3(false)}
+            >
+              {showTooltip3 && (
+                <div className="tooltip visible">
+                  <span>Expertise</span>
+                </div>
+              )}
+            </div>
+            {/* 4 */}
+            <div 
+              className="dot" 
+              style={{bottom: '43%', left: '46%'}}
+              onMouseEnter={() => setShowTooltip(true)}
+              onMouseLeave={() => setShowTooltip(false)}
+            >
+              {showTooltip && (
+                <div className="tooltip visible">
+                  <span >Promises</span>
+                </div>
+              )}
+            </div>
+                    {/* 5 */}
+
+            <div className="dot" 
+              style={{bottom: '20%', left: '47.5%'}}
+              onMouseEnter={() => setShowTooltip5(true)}
+              onMouseLeave={() => setShowTooltip5(false)}
+            >
+              {showTooltip5 && (
+                <div className="tooltip-right visible">
+                  <span>Our Founder</span>
+                </div>
+              )}
+            </div>
+                                {/* 6 */}
+            <div className="dot" 
+              style={{bottom: '43%', left: '50%'}}
+              onMouseEnter={() => setShowTooltip6(true)}
+              onMouseLeave={() => setShowTooltip6(false)}
+            >
+              {showTooltip6 && (
+                <div className="tooltip-right visible">
+                  <span>We do</span>
+                </div>
+              )}
+            </div>
+            {/* 7 */}
+
+             <div className="dot" 
+              style={{bottom: '74%', left: '51%'}}
+              onMouseEnter={() => setShowTooltip7(true)}
+              onMouseLeave={() => setShowTooltip7(false)}
+            >
+              {showTooltip7 && (
+                <div className="tooltip visible">
+                  <span>Values</span>
+                </div>
+              )}
+            </div>
+
+            {/* 8 */}
+            <div className="dot" 
+              style={{bottom: '64%', left: '55%'}}
+              onMouseEnter={() => setShowTooltip8(true)}
+              onMouseLeave={() => setShowTooltip8(false)}
+            >
+              {showTooltip8 && (
+                <div className="tooltip-right visible">
+                  <span>Mission</span>
+                </div>
+              )}
+            </div>
+                                                {/* 9 */}
+            <div className="dot" 
+              style={{bottom: '84%', left: '51%'}}
+              onMouseEnter={() => setShowTooltip9(true)}
+              onMouseLeave={() => setShowTooltip9(false)}
+            >
+              {showTooltip9 && (
+                <div className="tooltip visible">
+                  <span>Goals</span>
+                </div>
+              )}
+            </div>
+
+                                    {/* 10 */}
+            <div className="dot" 
+              style={{bottom: '70%', left: '57.5%'}}
+              onMouseEnter={() => setShowTooltip10(true)}
+              onMouseLeave={() => setShowTooltip10(false)}
+            >
+              {showTooltip10 && (
+                <div className="tooltip-right visible">
+                  <span>Vision</span>
+                </div>
+              )}
+            </div>
+                                    {/* 11 */}
+            <div className="dot" 
+              style={{bottom: '93%', left: '59%'}}
+              onMouseEnter={() => setShowTooltip11(true)}
+              onMouseLeave={() => setShowTooltip11(false)}
+            >
+              {showTooltip11 && (
+                <div className="tooltip-right visible">
+                  <span>How we think</span>
+                </div>
+              )}
+            </div>
+
+
+
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              className="w-100 h-auto mb-4 video-zoom"
+              style={{ maxHeight: '400px', objectFit: 'cover' }}
+            >
+              <source src="/yts-cover-video.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      
+      <div className="row" >
+        {cardContents.map((content, index) => (
+          <div key={index} className="col-md-4 mt-5" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+            <Card className="bg-brand-yellow category-card" style={{height: "44px",display: "flex", justifyContent: "center", alignItems: "center"}}>
+              <CardBody>
+              <p className="font-bold text-center  category-text m-0">{content}</p>              </CardBody>
+            </Card>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
